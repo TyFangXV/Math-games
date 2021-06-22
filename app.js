@@ -1,4 +1,11 @@
+import {MDCTopAppBar} from '@material/top-app-bar';
+import {MDCDialog} from '@material/dialog';
 import {MDCRipple} from '@material/ripple';
+
+
+const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+const topAppBar = new MDCTopAppBar(topAppBarElement);
+
 
 const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
