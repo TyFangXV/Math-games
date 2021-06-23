@@ -1,6 +1,6 @@
 @use "@material/theme" with (
   $primary:  #121212,
-  $secondary: #121212,
+  $secondary: #363636,
   $on-primary: #ffffffc9,
   $on-secondary: #ffffffab,
 );
@@ -9,14 +9,14 @@
 
 @use '@material/button/mdc-button';
 @use '@material/button';
-@use "@material/dialog";
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/card";
 @use "@material/typography/mdc-typography";
+@use "@material/textfield";
 
+@include textfield.core-styles;
 @include icon-button.core-styles;
-@include dialog.core-styles;
 @include card.core-styles;
 
 *{
@@ -65,5 +65,49 @@ body {
 
 .footer{
     bottom: 0;
+    left: 45%;
+    position: absolute;
 }
+
+.start-screen{
+    .mdc-card-content{
+        padding:16px;
+    }
+
+    .mdc-card__content{
+        ul{
+            list-style:none;
+            li{
+                padding-top: 5px;
+            }
+        }
+    }
+
+
+        #speedRunBtn{
+          background-color: #ffffffab;
+          color: #363636 ;
+        }
+    
+    .mdc-card{
+        border-radius: 5px;
+    }
+    
+    .mdc-card{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+        height: 350px;
+        width: 350px;
+    }
+    
+    .mdc-card__actions{
+      background-color: #121212;
+      .mdc-card__action--button{
+         color: #ffffffc9;
+       }
+    }
+}
+
+
 

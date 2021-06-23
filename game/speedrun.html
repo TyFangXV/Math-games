@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../bundle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.2/math.min.js" integrity="sha512-X8Y5jFgsf/zxQN1X83Tdp1eHCzY52EfcYrDpbLxffRpF3Cyub7v9Jo0b5uwt1x6/h3ZnFzjL+yK12y1f7Q2zhg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="../private/css/speedrun.css"
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<body>
+    <nav class="mdc-top-app-bar mdc-top-app-bar--fixed--short">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">Mynx</span>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="View your previous score">sports_score</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="About the website">help</button>
+          </section>
+        </div>
+      </nav><br>
+      <div class="main">
+        <center>
+          <div class="start-screen">
+            <div class="mdc-card mdc-card--outlined">
+              <div class="mdc-card__content">
+                <p class="mdc-typography--headline3">Info</p>
+                <hr>
+                <ul class="mdc-typography--subtitle1">
+                  <li>There will be 15-20 questions.</li>
+                  <li>Each question will be 4s long.</li>
+                  <li>Questions can be addition, subtraction, mulitplication and division.</li>
+                </ul>
+              </div>
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-button--raised" id="speedRunBtn">
+                    <span class="mdc-button__label">Start Game</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="game-screen">
+             <span class="question">
+              <p id="question"></p>
+               <span>=</span>
+              <input type="text" id="ans">
+             </span>
+          </div>
+        </center>
+      </div>
+ <script src="../bundle.js" async></script>
+<script src="../private/js/question.js"></script>
+</body>
+</html>
+

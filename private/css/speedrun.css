@@ -1,0 +1,17 @@
+.game-screen{
+    display: none;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.question span, input{
+    padding: 5px;
+}
+
+.main{
+    margin-top: 10%;
+}

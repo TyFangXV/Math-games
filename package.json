@@ -23,6 +23,8 @@
     "@material/button": "^11.0.0",
     "@material/card": "^11.0.0",
     "@material/dialog": "^11.0.0",
+    "@material/list": "^11.0.0",
+    "@material/textfield": "^11.0.0",
     "@material/theme": "^11.0.0",
     "@material/top-app-bar": "^11.0.0",
     "@material/typography": "^11.0.0",
